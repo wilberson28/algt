@@ -1,16 +1,10 @@
-#include <iostream>
-#include <map>
+#include<iostream>
+#include"lib.hpp"
 int main(){
-	std::map<char,int> mymap;
-	mymap['a']=5;
-	mymap['y']=7;
-	mymap['i']=-2;
-	mymap['o']=0;
-	
-	std::map<char,int>::iterator it;
-	for(it=mymap.begin(); it!=mymap.end(); it++){
-		std::cout<<"("<<it->first<<","<<it->second<<")";
-	}
-	std::cout<<"\n";
-	return 0;
+	std::vector<int>myvec={1,5,-6,7,9};
+	int x=-6;
+	std::cout<<lineal_search(myvec,x);
+
+
+
 }
